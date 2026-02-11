@@ -10,3 +10,8 @@ function setLang(lang) {
       "Passionate about AI technology and holistic wellness.";
   }
 }
+function setLang(lang) {
+  document.querySelectorAll("[data-vi]").forEach(el => {
+    el.innerText = el.getAttribute("data-" + lang);
+  });
+}
