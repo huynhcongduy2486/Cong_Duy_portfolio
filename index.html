@@ -2,73 +2,31 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Huỳnh Công Duy | Portfolio</title>
+  <title>Huỳnh Công Duy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <div class="logo">Cong Duy</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="overlay"></div>
 
-<section id="home" class="hero">
-  <img src="avatar.jpg" class="avatar">
-  <h1>Huỳnh Công Duy</h1>
-  <h2><span id="typing"></span></h2>
-</section>
+<div class="content">
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="glass">
-    <p>
-      Xin chào, mình là Huỳnh Công Duy. 
-      Mình đam mê Machine Learning và AI,
-      tập trung xây dựng các hệ thống thông minh
-      và giải pháp công nghệ mang tính ứng dụng thực tế.
-    </p>
+  <div class="lang">
+    <button onclick="setLang('vi')">VI</button>
+    <button onclick="setLang('en')">EN</button>
   </div>
-</section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Python</span>
-    <span>Machine Learning</span>
-    <span>Deep Learning</span>
-    <span>Data Analysis</span>
-    <span>Git</span>
+  <div class="avatar-wrapper">
+    <img src="avatar.jpg" class="avatar">
   </div>
-</section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="projects">
-    <div class="glass card">
-      <h3>AI Image Classifier</h3>
-      <p>Deep learning model for classification.</p>
-    </div>
-    <div class="glass card">
-      <h3>Data Dashboard</h3>
-      <p>Interactive analytics system.</p>
-    </div>
-  </div>
-</section>
+  <h1>Hello, I'm</h1>
+  <h2><span>Huỳnh Công Duy</span></h2>
+  <h3 id="role">Machine Learning Engineer</h3>
+  <p id="desc">Passionate about AI technology and holistic wellness</p>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="glass">
-    <p>Email: your-email@gmail.com</p>
-    <p>GitHub: github.com/huynhcongduy2486</p>
-  </div>
-</section>
+</div>
 
 <script src="main.js"></script>
 </body>
