@@ -5,90 +5,78 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100vh;
-  background: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee")
-              no-repeat center center/cover;
-  position: relative;
+  background: #0f2027;
   color: white;
-  text-align: center;
 }
 
-.overlay {
-  position: absolute;
+/* NAVBAR */
+nav {
+  position: fixed;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    rgba(0, 40, 80, 0.7),
-    rgba(0, 0, 0, 0.8)
-  );
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  z-index: 1000;
 }
 
-.content {
-  position: relative;
-  z-index: 2;
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 20px;
+  text-align: center;
   min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg,#203a43,#2c5364);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 1.5s ease;
-}
-
-.avatar-wrapper {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  padding: 8px;
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(10px);
-  margin-bottom: 25px;
 }
 
 .avatar {
-  width: 100%;
-  height: 100%;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid white;
 }
 
-h1 {
-  font-size: 2rem;
-  opacity: 0.9;
+/* SKILLS */
+.skill-list {
+  list-style: none;
+  margin-top: 20px;
 }
 
-h2 span {
-  font-size: 3rem;
-  color: #ffb703;
-}
-
-h3 {
-  margin-top: 10px;
-  font-weight: 400;
-}
-
-p {
-  margin-top: 10px;
-  max-width: 500px;
-  opacity: 0.85;
-}
-
-.lang {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-
-.lang button {
-  margin-right: 10px;
-  padding: 6px 15px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
+.skill-list li {
+  margin: 10px 0;
+  font-size: 18px;
 }
