@@ -1,32 +1,12 @@
-const roles = [
-  "Machine Learning Engineer",
-  "AI Developer",
-  "Data Enthusiast"
-];
-
-let i = 0;
-let j = 0;
-let currentRole = "";
-let isDeleting = false;
-
-function typeEffect() {
-  currentRole = roles[i];
-  
-  if (!isDeleting) {
-    document.getElementById("typing").innerText =
-      currentRole.substring(0, j++);
+function setLang(lang) {
+  if (lang === "vi") {
+    document.getElementById("role").innerText = "Kỹ sư Machine Learning";
+    document.getElementById("desc").innerText =
+      "Đam mê công nghệ AI và phát triển toàn diện.";
   } else {
-    document.getElementById("typing").innerText =
-      currentRole.substring(0, j--);
+    document.getElementById("role").innerText =
+      "Machine Learning Engineer";
+    document.getElementById("desc").innerText =
+      "Passionate about AI technology and holistic wellness.";
   }
-
-  if (j == currentRole.length) isDeleting = true;
-  if (j == 0 && isDeleting) {
-    isDeleting = false;
-    i = (i + 1) % roles.length;
-  }
-
-  setTimeout(typeEffect, isDeleting ? 50 : 100);
 }
-
-typeEffect();
