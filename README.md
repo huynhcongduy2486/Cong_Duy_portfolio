@@ -13,5 +13,5 @@ Passionate about AI technology and holistic wellness.
 - 🌱 Continuous self-improvement
 
 ## 📫 Contact
-- Email: huynhcongduy@gmail.com
-- Facebook: your-link
+- Email: huynhcongduy2408@gmail.com
+- Facebook:
