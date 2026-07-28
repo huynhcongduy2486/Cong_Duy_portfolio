@@ -1,5 +1,5 @@
-# Cong_Duy_portfolio
-# 👋 Huỳnh Công Duy
+
+# Portfolio Huỳnh Công Duy
 
 Machine Learning Engineer  
 Passionate about AI technology and holistic wellness.
